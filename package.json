@@ -1,0 +1,14 @@
+{
+  "name": "april_porto",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev" : "npx tailwindcss -i ./src/css/tailwind.css -o ./src/css/style.css --watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.4.3"
+  }
+}
