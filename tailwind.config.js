@@ -2,7 +2,14 @@
 module.exports = {
   content: ['./src/**/*.{html,js}'],
   theme: {
-    extend: {},
+    extend: {
+      gridTemplateRows: {
+        'card': '78% auto'
+      },
+      gridTemplateColumns: {
+        'card': 'repeat(2, min(300px, 1fr))'
+      },
+    },
   },
   plugins: [],
 }

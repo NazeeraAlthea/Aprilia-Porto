@@ -1,0 +1,13 @@
+.animation-slide-menu {
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 1000ms;
+    left: 0px;
+  }
+  
+  .animation-slide-menu-back {
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 1000ms;
+    left: -100%;
+  }
