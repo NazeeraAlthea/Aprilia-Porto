@@ -8,7 +8,7 @@
 .animation-slide-menu-back {
 transition-property: all;
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-transition-duration: 1000ms;
+transition-duration: 0s;
 left: -100%;
 }
 
