@@ -1,35 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portofolio</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animation.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css" />
 </head>
 
 <body>
-    <header class="fixed z-10 bg-white w-full p-4">
-        <nav class="">
-            <ul class="flex justify-end sm:justify-center sm:gap-12">
-                <li class="hidden sm:inline"><a class="hover:text-orange-600 " href="">About</a></li>
-                <li class="hidden sm:inline"><a class="hover:text-orange-600 " href="">Works</a></li>
-                <li class="hidden sm:inline"><a class="hover:text-orange-600 " href="">Resume</a></li>
-                <li class="hidden sm:inline"><a class="hover:text-orange-600 " href="">Contact</a></li>
-                <i class="ti ti-menu-2 text-xl sm:hidden"></i>
+    <header class="fixed z-10 bg-white w-full">
+        <nav class="p-4">
+            <div id="menu-open" class="flex justify-end text-2xl md:hidden">
+                <i class="ti ti-menu-2"></i>
+            </div>
+            <ul id="menu-list" class="fixed -left-full flex flex-col items-center justify-center gap-10 text-2xl top-0 bg-gray-200 w-full h-screen md:text-base md:flex-row md:left-0 md:relative md:h-full md:flex md:bg-white md:justify-center md:gap-12">
+                <div id="menu-close" class="absolute top-0 right-0 p-8 md:hidden">
+                    <i class="ti ti-x"></i>
+                </div>
+                <li class=""><a class="link hover:text-orange-600 " href="#">About</a></li>
+                <li class=""><a class="link hover:text-orange-600 " href="#works">Works</a></li>
+                <li class=""><a class="link hover:text-orange-600 " href="">Resume</a></li>
+                <li class=""><a class="link hover:text-orange-600 " href="">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <main class="flex flex-col justify-center">
+
+        <!-- HERO -->
         <header class="h-screen flex flex-col items-center lg:flex lg:flex-row-reverse lg:items-center pt-12">
             <img 
-            class="w-full h-1/2 object-cover lg:w-1/2 lg:h-screen object-top"
+            class="w-full h-1/2 object-cover lg:w-1/2 lg:h-full object-top"
             src="assets/img/profile-copy.png" alt="">
             <div role="hero" class="m-4 flex flex-col items-center w-10/12 lg:w-5/12">
                 <h1 class="text-center text-5xl font-bold"><span class="text-orange-500">April</span>ia Frisila</h1>
-                <p class="text-justify my-5">Saya mendalami bidang <span class="text-orange-500 italic">Perbankan syariah</span> dan menjadi fresh graduate dari <span class="text-orange-500">SMKN 49 JAKARTA</span>. Saya juga suka mempelajari tentang Micosoft Office.</p>
-                <button class="bg-orange-500 w-fit px-4 py-3 text-white rounded shadow hover:bg-white hover:border-orange-500 hover:text-orange-500 hover:shadow-orange-500">Discover Me</button>
+                <p class="text-justify my-5">Saya mendalami bidang <span class="text-orange-500 ">Perbankan syariah</span> dan menjadi fresh graduate dari <span class="text-orange-500">SMKN 49 Jakarta</span>. Saya juga suka mempelajari tentang Micosoft Office.</p>
+                <a href="#works"><button class="bg-orange-500 w-fit px-4 py-3 text-white rounded shadow hover:bg-white hover:border-orange-500 hover:text-orange-500 hover:shadow-orange-500">Discover Me</button></a>
                 <div role="button" class="hidden lg:flex absolute right-0 bottom-0 m-10 gap-4 left-0">
                     <a href="">
                         <i class="ti ti-brand-whatsapp text-2xl hover:text-orange-500"></i>
@@ -44,6 +52,28 @@
             </div>
 
         </header>
+
+        <!-- WORKS -->
+        <article id="works" class="w-full h-screen flex flex-col items-center pt-24">
+            <header class="shadow-xl rounded-lg border border-gray-200 mb-12">
+                <h1 class="text-center text-3xl font-bold text-orange-500 py-4 px-8">EXPERIENCE</h1>
+            </header>
+
+            <section class="flex flex-wrap w-full h-screen justify-evenly">
+                <div role="card" class="grid border border-gray-300 w-80 h-2/5 grid-rows-card my-4 rounded shadow-md shadow-gray-400">
+                    <img src="assets/img/exp-taspen.jpg" alt="" class="bg-slate-700 h-full rounded-t object-cover w-full">           
+                    <p class="flex items-end justify-center text-center text-sm text-gray-800 font-semibold">PT TASPEN (Persero)</p>
+                    <p class="flex items-start justify-center text-center text-sm text-gray-800 font-semibold">Marketing</p>
+                </div>
+
+                <div role="card" class="grid border border-gray-300 w-80 h-2/5 grid-rows-card my-4 rounded shadow-md shadow-gray-400">
+                    <img src="assets/img/exp-dki.jpg" alt="" class="bg-slate-700 h-full rounded-t object-cover w-full">           
+                    <p class="flex items-end justify-center text-center text-sm text-gray-800 font-semibold">PT Bank DKI Syariah</p>
+                    <p class="flex items-start justify-center text-center text-sm text-gray-800 font-semibold">Asisten Layanan</p>
+                </div>
+
+            </section>
+        </article>
     </main>
 
 
@@ -51,5 +81,7 @@
     <footer>
 
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
