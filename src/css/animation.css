@@ -5,9 +5,20 @@
     left: 0px;
   }
   
-  .animation-slide-menu-back {
-    transition-property: all;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-duration: 1000ms;
-    left: -100%;
-  }
+.animation-slide-menu-back {
+transition-property: all;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+transition-duration: 1000ms;
+left: -100%;
+}
+
+@media only screen and (min-width: 768px){
+    .animation-slide-menu-back{
+        left: 0px;
+        transition: none;
+    }
+    .animation-slide-menu{
+        left: 0px;
+        transition: none;
+    }
+}
