@@ -9,6 +9,9 @@ module.exports = {
       gridTemplateColumns: {
         'card': 'repeat(2, min(300px, 1fr))'
       },
+      borderRadius: {
+        'circle': '50%'
+      }
     },
   },
   plugins: [],

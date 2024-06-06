@@ -6,6 +6,7 @@
     <title>Portofolio</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/animation.css">
+    <link rel="stylesheet" href="css/filter.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css" />
 </head>
 
@@ -15,39 +16,55 @@
             <div id="menu-open" class="flex justify-end text-2xl md:hidden">
                 <i class="ti ti-menu-2"></i>
             </div>
-            <ul id="menu-list" class="fixed -left-full flex flex-col items-center justify-center gap-10 text-2xl top-0 bg-gray-200 w-full h-screen md:text-base md:flex-row md:left-0 md:relative md:h-full md:flex md:bg-white md:justify-center md:gap-12">
+            <ul id="menu-list" class="fixed -left-full flex flex-col items-start justify-center gap-10 text-xl top-0 bg-orange-100 p-4 w-1/2 h-screen md:text-base md:flex-row md:left-0 md:relative md:h-full md:w-full md:flex md:bg-white md:justify-center md:gap-12">
                 <div id="menu-close" class="absolute top-0 right-0 p-8 md:hidden">
                     <i class="ti ti-x"></i>
                 </div>
-                <li class=""><a class="link hover:text-orange-600 " href="#">About</a></li>
-                <li class=""><a class="link hover:text-orange-600 " href="#works">Works</a></li>
-                <li class=""><a class="link hover:text-orange-600 " href="">Resume</a></li>
-                <li class=""><a class="link hover:text-orange-600 " href="">Contact</a></li>
+                <li class=""><a class="link hover:text-orange-400" href="#">About</a></li>
+                <li class=""><a class="link hover:text-orange-400 " href="#works">Works</a></li>
+                <li class=""><a class="link hover:text-orange-400 " href="">Resume</a></li>
+                <li class=""><a class="link hover:text-orange-400 " href="">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <main class="flex flex-col justify-center">
+    <main id="main" class="flex flex-col justify-center">
 
         <!-- HERO -->
-        <header class="h-screen flex flex-col items-center lg:flex lg:flex-row-reverse lg:items-center pt-12">
+        <header class="h-screen flex flex-col items-center md:flex md:flex-row-reverse md:items-center pt-12">
             <img 
-            class="w-full h-1/2 object-cover lg:w-1/2 lg:h-full object-top"
+            class="w-full h-1/2 object-cover md:w-1/2 md:h-full object-top"
             src="assets/img/profile-copy.png" alt="">
-            <div role="hero" class="m-4 flex flex-col items-center w-10/12 lg:w-5/12">
+            <div role="hero" class="m-4 flex flex-col items-center w-10/12 md:w-5/12">
                 <h1 class="text-center text-5xl font-bold"><span class="text-orange-500">April</span>ia Frisila</h1>
                 <p class="text-justify my-5">Saya mendalami bidang <span class="text-orange-500 ">Perbankan syariah</span> dan menjadi fresh graduate dari <span class="text-orange-500">SMKN 49 Jakarta</span>. Saya juga suka mempelajari tentang Micosoft Office.</p>
-                <a href="#works"><button class="bg-orange-500 w-fit px-4 py-3 text-white rounded shadow hover:bg-white hover:border-orange-500 hover:text-orange-500 hover:shadow-orange-500">Discover Me</button></a>
-                <div role="button" class="hidden lg:flex absolute right-0 bottom-0 m-10 gap-4 left-0">
-                    <a href="https://wa.me/628996623466" target="_blank">
-                        <i class="ti ti-brand-whatsapp text-2xl hover:text-orange-500"></i>
-                    </a>
-                    <a href="https://www.instagram.com/aprliafrsl27/" target="_blank">
-                        <i class="ti ti-brand-instagram text-2xl hover:text-orange-500"></i>
-                    </a>
-                    <a href="mailto:apriliafrisila8@gmail.com" target="_blank">
-                        <i class="ti ti-mail text-2xl hover:text-orange-500"></i>
-                    </a>
+                <!-- button -->
+                <div role="button" class="flex items-center gap-4 w-full justify-start">
+                    <a href="#works"><button class="bg-orange-500 w-fit px-4 py-3 text-white rounded shadow hover:bg-white hover:border-orange-500 hover:text-orange-500 hover:shadow-orange-500">Discover Me</button></a>
+                    <div role="button" class="text-3xl flex text-orange-500 md:absolute md:text-2xl md:right-0 md:bottom-0 md:m-10 gap-4 md:left-0">
+                        <a href="https://wa.me/628996623466" target="_blank" class="flex justify-center items-center rounded-circle shadow shadow-orange-500 h-10 w-10 hover:bg-orange-500 hover:text-white">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-brand-whatsapp">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9" />
+                                <path d="M9 10a.5 .5 0 0 0 1 0v-1a.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a.5 .5 0 0 0 0 -1h-1a.5 .5 0 0 0 0 1" />
+                            </svg>
+                        </a>
+                        <a href="https://www.instagram.com/aprliafrsl27/" target="_blank" class="flex justify-center items-center rounded-circle shadow shadow-orange-500 h-10 w-10 hover:bg-orange-500 hover:text-white">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-brand-instagram">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path d="M4 4m0 4a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z" />
+                                <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+                                <path d="M16.5 7.5l0 .01" />
+                            </svg>
+                        </a>
+                        <a href="mailto:apriliafrisila8@gmail.com" target="_blank" class="flex justify-center items-center rounded-circle shadow shadow-orange-500 h-10 w-10 hover:bg-orange-500 hover:text-white">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-mail">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z" />
+                                <path d="M3 7l9 6l9 -6" />
+                            </svg>
+                        </a>
+                    </div>
                 </div>
             </div>
 
@@ -59,7 +76,7 @@
                 <h1 class="text-center text-3xl font-bold text-orange-500 py-4 px-8">EXPERIENCE</h1>
             </header>
 
-            <section class="flex flex-wrap w-full h-screen justify-evenly">
+            <section class="flex flex-wrap w-full h-screen justify-evenly animation-slide-menu">
                 <div role="card" class="grid border border-gray-300 w-80 h-2/5 grid-rows-card my-4 rounded shadow-md shadow-gray-400">
                     <img src="assets/img/exp-taspen.jpg" alt="" class="bg-slate-700 h-full rounded-t object-cover w-full">           
                     <p class="flex items-end justify-center text-center text-sm text-gray-800 font-semibold">PT TASPEN (Persero)</p>
